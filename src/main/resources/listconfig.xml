@@ -12,7 +12,7 @@
             <value>CMC</value>
         </property>
         <property name="departments">
-            <list>
+            <list value-type="java.lang.String">
                 <value>Front office</value>
                 <value>Cardiology</value>
                 <value>Dermatology</value>

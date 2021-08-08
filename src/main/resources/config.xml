@@ -8,6 +8,7 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
     <bean name="emp" class="com.mns.springcore.Employee">
+        <constructor-arg value="Google"></constructor-arg>
         <property name="id" value="10"></property>
         <property name="name" value="Sekhar"></property>
     </bean>

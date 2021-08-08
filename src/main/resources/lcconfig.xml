@@ -10,7 +10,7 @@
     <bean id="patientInit" abstract="true" init-method="onInit" destroy-method="onDestroy"></bean>
     <bean id="patient1" class="com.mns.springcore.lc.xmlconfig.Patient" p:id="1" p:name="covidPatient1" parent="patientInit"/>
     <bean id="patient2" class="com.mns.springcore.lc.xmlconfig.Patient" p:id="2" p:name="covidPatient2" parent="patientInit"/>
-    <bean id="patient3" class="com.mns.springcore.lc.xmlconfig.Patient" p:id="3" p:name="covidPatient3" parent="patientInit"/>
+    <bean id="patient3" class="com.mns.springcore.lc.xmlconfig.Patient" p:id="3" p:name="covidPatient3"/>
 
     <bean name="doctor" class="com.mns.springcore.lc.xmlconfig.Doctor" p:id="10" p:name="Dr.Evans" init-method="onInit" destroy-method="onDestroy">
         <property name="patients">

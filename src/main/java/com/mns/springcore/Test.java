@@ -8,7 +8,7 @@ public class Test {
         Employee ee = (Employee)  ctx.getBean("emp");
         System.out.println(ee.getName());
         System.out.println(ee.getId());
-
+        System.out.println(ee.company);
         ee.setName("Sekhar1");
 
         Employee ee1 = (Employee)  ctx.getBean("emp");

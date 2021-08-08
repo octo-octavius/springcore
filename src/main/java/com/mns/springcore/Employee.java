@@ -3,6 +3,11 @@ package com.mns.springcore;
 public class Employee {
     private int id;
     private String name;
+    public String company;
+
+    Employee(String company) {
+        this.company = company;
+    }
 
     public int getId() {
         return id;

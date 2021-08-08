@@ -10,7 +10,7 @@
     <bean name="countriesAndLangs" class="com.mns.springcore.properties.CountriesAndLanguages">
         <property name="countriesAndLang">
             <props>
-                <prop key="USA" >English</prop>
+                <prop key="USA">English</prop>
                 <prop key="Spain" >Spanish</prop>
                 <prop key="Denmark" >Danish</prop>
             </props>

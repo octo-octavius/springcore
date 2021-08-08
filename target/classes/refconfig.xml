@@ -19,5 +19,5 @@
 <!--        </property>-->
 <!--    </bean>-->
 
-<!--    <bean name="student" class="com.mns.springcore.reftypes.Student" p:scores-ref="scores"></bean>-->
+    <bean name="student" class="com.mns.springcore.reftypes.Student" p:scores-ref="scores"></bean>
 </beans>
