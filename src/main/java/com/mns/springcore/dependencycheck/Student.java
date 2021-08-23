@@ -1,7 +1,5 @@
 package com.mns.springcore.dependencycheck;
-
 import org.springframework.beans.factory.annotation.Required;
-
 import java.util.List;
 
 public class Student {
