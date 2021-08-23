@@ -8,18 +8,8 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
     <bean name="employee" class="com.mns.springcore.innerbean.Employee" p:id="101">
-        <bean name="address" cla
+        <property name="address">
+            <bean class="com.mns.springcore.innerbean.Address" p:aptNumber="109" p:street="12490 T Street"></bean>
+        </property>
     </bean>
-    <!--    <bean name="student" class="com.mns.springcore.reftypes.Student">-->
-    <!--        <property name="scores">-->
-    <!--            <ref bean="scores"></ref>-->
-    <!--        </property>-->
-    <!--    </bean>-->
-
-    <!--    <bean name="student" class="com.mns.springcore.reftypes.Student">-->
-    <!--        <property name="scores" ref="scores">-->
-    <!--        </property>-->
-    <!--    </bean>-->
-
-    <bean name="student" class="com.mns.springcore.reftypes.Student" p:scores-ref="scores"></bean>
 </beans>

@@ -1,4 +1,4 @@
-package com.mns.springcore.innerbean;
+package com.mns.springcore.scopes;
 
 public class Employee {
     private Address address;

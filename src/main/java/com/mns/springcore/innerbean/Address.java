@@ -1,4 +1,4 @@
-package com.mns.springcore.dependencycheck;
+package com.mns.springcore.innerbean;
 
 public class Address {
     private String street;

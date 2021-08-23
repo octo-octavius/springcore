@@ -1,6 +1,4 @@
-package com.mns.springcore.dependencycheck;
-
-import org.springframework.beans.factory.annotation.Required;
+package com.mns.springcore.innerbean;
 
 public class Employee {
     private Address address;
@@ -19,7 +17,6 @@ public class Employee {
         return id;
     }
 
-    @Required
     public void setId(int id) {
         this.id = id;
     }
