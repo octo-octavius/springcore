@@ -3,7 +3,7 @@ package com.mns.springcore.autowiringannot;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 
-// contructor injection -> field injection -> setter injection
+// constructor injection -> field injection -> setter injection
 
 public class Employee {
     @Autowired
