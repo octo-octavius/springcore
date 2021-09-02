@@ -1,4 +1,4 @@
-package com.mns.springcore.autowiring;
+package com.mns.springcore.autowiringannot;
 
 public class Address {
     private String street;

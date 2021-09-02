@@ -1,7 +1,14 @@
-package com.mns.springcore.innerbean;
+package com.mns.springcore.autowiring;
 
 public class Employee {
     private Address address;
+
+    Employee() { super();}
+
+    Employee(Address address) {
+        System.out.println("COnstructor injection auto wire");
+        this.address = address;
+    }
 
     private int id;
 

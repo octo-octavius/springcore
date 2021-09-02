@@ -1,4 +1,4 @@
-package com.mns.springcore.innerbean;
+package com.mns.springcore.autowiring;
 
 public class Address {
     private String street;

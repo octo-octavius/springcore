@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!--  <bean name="employee" class="com.mns.springcore.autowiring.Employee" p:id="101" autowire="byType">-->
+<!--  </bean>-->
+
+<!--  <bean name="employee" class="com.mns.springcore.autowiring.Employee" p:id="101" autowire="byName"/>-->
+
+  <bean name="employee" class="com.mns.springcore.autowiring.Employee" p:id="101" autowire="constructor">
+  </bean>
+
+  <bean name="address1" class="com.mns.springcore.autowiring.Address" p:aptNumber="109"
+      p:street="12490 T Street"/>
+
+  <bean name="address" class="com.mns.springcore.autowiring.Address" p:aptNumber="110"
+      p:street="12490 T Street"/>
+
+<!--  This will throw an exception due to duplicate when byType-->
+<!--  <bean name="address2" class="com.mns.springcore.autowiring.Address" p:aptNumber="109"-->
+<!--      p:street="12490 T Street"/>-->
+
+</beans>

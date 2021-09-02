@@ -1,14 +1,23 @@
-package com.mns.springcore.autowiring;
+package com.mns.springcore.autowiringannot;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
+// contructor injection -> field injection -> setter injection
 
 public class Employee {
+    @Autowired
+    @Qualifier("address1")
     private Address address;
 
     Employee() { super();}
 
-    Employee(Address address) {
-        System.out.println("COnstructor injection auto wire");
-        this.address = address;
-    }
+    // @Autowired
+    //     //@Qualifier not applicable for constructor injection
+    // Employee(Address address) {
+    //     System.out.println("COnstructor injection auto wire");
+    //     this.address = address;
+    // }
 
     private int id;
 
@@ -16,6 +25,8 @@ public class Employee {
         return address;
     }
 
+    @Autowired
+    @Qualifier("address2")
     public void setAddress(Address address) {
         this.address = address;
     }
